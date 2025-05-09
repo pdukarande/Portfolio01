@@ -7,6 +7,32 @@
     --color-6: #DDDD15;
     --color-7: #C1ACFF;
 }
+
+.d16-g.item {
+ 
+  background-color: #ccc; /* Example background color */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hidden-info {
+  display: none;  /* Hide the information by default */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.d16-g.item:hover .hidden-info {
+  display: block;  /* Show the information when hovering */
+}
 .S1{
     background: linear-gradient(90deg,#024add 0,#01a3f4 50%,#024add 100%);
     border-bottom: 1px solid rgba(255,255,255,.3);
